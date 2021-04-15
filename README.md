@@ -18,3 +18,12 @@ Feature:
 As a babysitter
 In order to get paid for 1 night of work
 I want to calculate my nightly charge
+
+
+Assumptions:
+- Start-time and end-time can't be the same
+- Earliest end-time is 6 PM
+- Must have a bedtime
+- Bedtime must be by 12 AM
+- Start-time must be by 12 AM
+
