@@ -19,6 +19,7 @@ public class BabysitterKata {
         }
 
         if(endTime == 5 ||
+                endTime < 1 ||
                 endTime >= 13 ||
                 endTime == 12 && endTimeAMorPM.equalsIgnoreCase("PM") ||
                 endTime < 6 && endTimeAMorPM.equalsIgnoreCase("PM")||
