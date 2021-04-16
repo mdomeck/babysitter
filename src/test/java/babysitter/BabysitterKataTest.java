@@ -45,6 +45,8 @@ public class BabysitterKataTest {
         assertThrows(Exception.class, () -> BabysitterKata.income(3, "PM", 5, "PM", 12, "AM"));
         assertThrows(Exception.class, () -> BabysitterKata.income(13, "PM", 5, "PM", 12, "AM"));
         assertThrows(Exception.class, () -> BabysitterKata.income(12, "PM", 5, "PM", 12, "AM"));
+        assertThrows(Exception.class, () -> BabysitterKata.income(-1, "PM", 5, "PM", 12, "AM"));
+
     }
 
     @Test
@@ -53,6 +55,8 @@ public class BabysitterKataTest {
         assertThrows(Exception.class, () -> BabysitterKata.income(5, "PM", 13, "PM", 4, "AM"));
         assertThrows(Exception.class, () -> BabysitterKata.income(5, "PM", 12, "PM", 4, "AM"));
         assertThrows(Exception.class, () -> BabysitterKata.income(12, "PM", 10, "AM", 4, "AM"));
+        assertThrows(Exception.class, () -> BabysitterKata.income(-1, "PM", -1, "AM", 4, "AM"));
+
     }
 
     @Test
@@ -62,6 +66,8 @@ public class BabysitterKataTest {
         assertThrows(Exception.class, () -> BabysitterKata.income(5, "PM", 5, "PM", 12, "PM"));
         assertThrows(Exception.class, () -> BabysitterKata.income(5, "PM", 9, "PM", 4, "PM"));
         assertThrows(Exception.class, () -> BabysitterKata.income(5, "PM", 9, "PM", 8, "PM"));
+        assertThrows(Exception.class, () -> BabysitterKata.income(5, "PM", 9, "PM", -1, "PM"));
+
     }
 
     @Test
